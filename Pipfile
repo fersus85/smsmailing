@@ -6,7 +6,7 @@ name = "pypi"
 [packages]
 django = "*"
 psycopg2-binary = "*"
-djangorestframework = "~=3.11.0"
+djangorestframework = "*"
 django-phonenumber-field = {extras = ["phonenumberslite"], version = "*"}
 
 [dev-packages]
