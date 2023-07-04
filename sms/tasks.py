@@ -32,7 +32,7 @@ def send_message(self, data, client_id, mailing_id, url=API, token=TOKEN):
             raise self.retry(exc=exc)
         else:
             logger.info(f"Message id: {data['id']}, Sending status: 'Отправлено'")
-            Message.objects.filter(pk=data["id"]).update(sending_status="Отправлено")
+            Message.objects.filter(pk=data["id"]).update(status="Отправлено")
     else:
         time = 24 - (
             int(now.time().strftime("%H:%M:%S")[:2])
