@@ -8,6 +8,10 @@ django = "*"
 psycopg2-binary = "*"
 djangorestframework = "*"
 django-phonenumber-field = {extras = ["phonenumberslite"], version = "*"}
+celery = "*"
+redis = "*"
+flower = "*"
+requests = "*"
 
 [dev-packages]
 
