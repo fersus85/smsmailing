@@ -1,0 +1,1110 @@
+openapi: 3.0.2
+info:
+  title: ''
+  version: ''
+paths:
+  /api/v1/clients/:
+    get:
+      operationId: listClients
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ClientList'
+          description: ''
+      tags:
+      - api
+    post:
+      operationId: createClient
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ClientList'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/ClientList'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/ClientList'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ClientList'
+          description: ''
+      tags:
+      - api
+  /api/v1/clients/{id}/:
+    get:
+      operationId: retrieveClient
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this client.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ClientList'
+          description: ''
+      tags:
+      - api
+    put:
+      operationId: updateClient
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this client.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ClientList'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/ClientList'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/ClientList'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ClientList'
+          description: ''
+      tags:
+      - api
+    patch:
+      operationId: partialUpdateClient
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this client.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ClientList'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/ClientList'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/ClientList'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ClientList'
+          description: ''
+      tags:
+      - api
+    delete:
+      operationId: destroyClient
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this client.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - api
+  /api/v1/mailings/:
+    get:
+      operationId: listMailings
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/MailingList'
+          description: ''
+      tags:
+      - api
+    post:
+      operationId: createMailing
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/MailingList'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/MailingList'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/MailingList'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MailingList'
+          description: ''
+      tags:
+      - api
+  /api/v1/mailings/stats/:
+    get:
+      operationId: statsMailing
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MailingList'
+          description: ''
+      tags:
+      - api
+  /api/v1/mailings/{id}/:
+    get:
+      operationId: retrieveMailing
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this mailing.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MailingList'
+          description: ''
+      tags:
+      - api
+    put:
+      operationId: updateMailing
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this mailing.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/MailingList'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/MailingList'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/MailingList'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MailingList'
+          description: ''
+      tags:
+      - api
+    patch:
+      operationId: partialUpdateMailing
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this mailing.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/MailingList'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/MailingList'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/MailingList'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MailingList'
+          description: ''
+      tags:
+      - api
+    delete:
+      operationId: destroyMailing
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this mailing.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - api
+  /api/v1/mailings/{id}/detstats/:
+    get:
+      operationId: detstatsMailing
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this mailing.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MailingList'
+          description: ''
+      tags:
+      - api
+  /api/v1/messages/:
+    get:
+      operationId: listMessages
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/MessageList'
+          description: ''
+      tags:
+      - api
+    post:
+      operationId: createMessage
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/MessageList'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/MessageList'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/MessageList'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MessageList'
+          description: ''
+      tags:
+      - api
+  /api/v1/messages/{id}/:
+    get:
+      operationId: retrieveMessage
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this message.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MessageList'
+          description: ''
+      tags:
+      - api
+    put:
+      operationId: updateMessage
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this message.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/MessageList'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/MessageList'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/MessageList'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MessageList'
+          description: ''
+      tags:
+      - api
+    patch:
+      operationId: partialUpdateMessage
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this message.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/MessageList'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/MessageList'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/MessageList'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MessageList'
+          description: ''
+      tags:
+      - api
+    delete:
+      operationId: destroyMessage
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this message.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - api
+components:
+  schemas:
+    ClientList:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        tag:
+          type: string
+          maxLength: 20
+        phone_number:
+          type: string
+          maxLength: 128
+        code:
+          type: string
+          readOnly: true
+        timezone:
+          enum:
+          - America/Tijuana
+          - America/Chihuahua
+          - Pacific/Guam
+          - America/Sitka
+          - Mexico/BajaSur
+          - Asia/Kamchatka
+          - America/Guayaquil
+          - Asia/Beirut
+          - Mexico/General
+          - Africa/Dar_es_Salaam
+          - Indian/Reunion
+          - America/Indiana/Winamac
+          - Europe/Amsterdam
+          - Pacific/Niue
+          - Canada/Newfoundland
+          - NZ-CHAT
+          - America/Thunder_Bay
+          - Factory
+          - Europe/Busingen
+          - Europe/Monaco
+          - Asia/Barnaul
+          - Iran
+          - Europe/Tallinn
+          - America/Chicago
+          - Asia/Ulan_Bator
+          - Europe/London
+          - America/Puerto_Rico
+          - Pacific/Pitcairn
+          - Pacific/Majuro
+          - Asia/Chongqing
+          - America/Indiana/Indianapolis
+          - Asia/Sakhalin
+          - America/Argentina/Mendoza
+          - US/Michigan
+          - Asia/Bahrain
+          - localtime
+          - America/Porto_Acre
+          - America/Campo_Grande
+          - Africa/Kampala
+          - America/Costa_Rica
+          - Etc/Universal
+          - Etc/GMT-3
+          - America/Nassau
+          - Asia/Gaza
+          - Atlantic/Reykjavik
+          - Europe/Bratislava
+          - CET
+          - America/Grand_Turk
+          - Etc/GMT-10
+          - America/Buenos_Aires
+          - Europe/Ulyanovsk
+          - America/New_York
+          - America/Indiana/Vincennes
+          - America/Panama
+          - Asia/Thimphu
+          - Etc/Zulu
+          - Atlantic/Faeroe
+          - Indian/Mayotte
+          - Europe/Warsaw
+          - America/Matamoros
+          - Asia/Kathmandu
+          - Asia/Baku
+          - Asia/Istanbul
+          - Etc/GMT+3
+          - America/Toronto
+          - Pacific/Chatham
+          - Africa/Algiers
+          - Canada/Yukon
+          - America/Whitehorse
+          - Antarctica/McMurdo
+          - Africa/Asmera
+          - Asia/Jakarta
+          - America/Nipigon
+          - Antarctica/Vostok
+          - Etc/GMT-13
+          - Africa/Asmara
+          - US/Pacific
+          - Asia/Tel_Aviv
+          - America/Belem
+          - Europe/Skopje
+          - America/Tortola
+          - Chile/Continental
+          - America/Los_Angeles
+          - America/Atikokan
+          - Pacific/Fiji
+          - Etc/GMT+2
+          - America/Anguilla
+          - Africa/Djibouti
+          - Japan
+          - Brazil/West
+          - Etc/GMT-14
+          - America/Mexico_City
+          - Pacific/Yap
+          - HST
+          - Africa/Lubumbashi
+          - Indian/Chagos
+          - Arctic/Longyearbyen
+          - Asia/Yakutsk
+          - America/Montevideo
+          - Africa/Luanda
+          - America/Yakutat
+          - Europe/Prague
+          - Asia/Qyzylorda
+          - America/Cayman
+          - US/Mountain
+          - Asia/Dhaka
+          - Australia/Hobart
+          - America/Scoresbysund
+          - Europe/Oslo
+          - Africa/Bujumbura
+          - Australia/Currie
+          - Australia/West
+          - Europe/Vienna
+          - America/Boa_Vista
+          - Antarctica/Rothera
+          - Europe/Vilnius
+          - Etc/GMT-9
+          - Europe/Mariehamn
+          - Pacific/Enderbury
+          - Canada/Central
+          - Europe/Istanbul
+          - Asia/Yerevan
+          - America/Santarem
+          - Africa/Mogadishu
+          - Asia/Ulaanbaatar
+          - Pacific/Wallis
+          - Europe/Samara
+          - Atlantic/South_Georgia
+          - Asia/Anadyr
+          - Europe/Berlin
+          - Europe/Kaliningrad
+          - Africa/Bangui
+          - Australia/Eucla
+          - Africa/Maseru
+          - Asia/Saigon
+          - Asia/Kuala_Lumpur
+          - Asia/Magadan
+          - Mexico/BajaNorte
+          - America/Santiago
+          - Etc/GMT-4
+          - Africa/Blantyre
+          - Kwajalein
+          - Europe/Budapest
+          - America/Creston
+          - Canada/Atlantic
+          - America/Virgin
+          - Pacific/Wake
+          - Asia/Krasnoyarsk
+          - America/Mendoza
+          - MST7MDT
+          - Asia/Makassar
+          - NZ
+          - Europe/San_Marino
+          - Pacific/Tongatapu
+          - Atlantic/St_Helena
+          - Pacific/Noumea
+          - Africa/Libreville
+          - EST5EDT
+          - Europe/Chisinau
+          - Europe/Luxembourg
+          - Europe/Vatican
+          - Europe/Tirane
+          - Asia/Aqtau
+          - Europe/Astrakhan
+          - Asia/Kolkata
+          - Australia/ACT
+          - Universal
+          - Europe/Saratov
+          - Etc/GMT+7
+          - America/Catamarca
+          - Asia/Ujung_Pandang
+          - Asia/Choibalsan
+          - GMT-0
+          - Africa/Juba
+          - America/Argentina/Jujuy
+          - Navajo
+          - Asia/Urumqi
+          - America/Indiana/Tell_City
+          - America/Adak
+          - America/Havana
+          - America/St_Vincent
+          - Etc/GMT+4
+          - America/Curacao
+          - America/Jamaica
+          - America/Argentina/San_Juan
+          - Brazil/East
+          - Etc/GMT0
+          - Etc/UTC
+          - Europe/Kiev
+          - Asia/Tokyo
+          - GMT
+          - Pacific/Kiritimati
+          - Etc/GMT+9
+          - Libya
+          - Africa/Porto-Novo
+          - Chile/EasterIsland
+          - Asia/Bishkek
+          - Asia/Harbin
+          - Etc/GMT-8
+          - Pacific/Rarotonga
+          - Asia/Atyrau
+          - Africa/Niamey
+          - America/Menominee
+          - Asia/Famagusta
+          - Europe/Sofia
+          - America/Asuncion
+          - Africa/Gaborone
+          - America/Montserrat
+          - Europe/Brussels
+          - Pacific/Galapagos
+          - America/Ciudad_Juarez
+          - America/Anchorage
+          - Asia/Oral
+          - Etc/GMT+6
+          - Indian/Christmas
+          - Atlantic/Jan_Mayen
+          - Australia/Tasmania
+          - Pacific/Truk
+          - America/Bogota
+          - America/Fortaleza
+          - Africa/Tripoli
+          - Etc/GMT-11
+          - Africa/Banjul
+          - Atlantic/Madeira
+          - Africa/Ceuta
+          - PRC
+          - Europe/Podgorica
+          - US/East-Indiana
+          - Europe/Kirov
+          - Etc/GMT-12
+          - Etc/GMT+8
+          - Brazil/DeNoronha
+          - America/Jujuy
+          - America/Cambridge_Bay
+          - Canada/Pacific
+          - US/Alaska
+          - Africa/Bissau
+          - America/Maceio
+          - Atlantic/Stanley
+          - Pacific/Guadalcanal
+          - Pacific/Nauru
+          - ROC
+          - Asia/Tbilisi
+          - America/Danmarkshavn
+          - Asia/Yangon
+          - Asia/Amman
+          - Europe/Helsinki
+          - Etc/GMT+11
+          - Europe/Zurich
+          - America/Cancun
+          - Africa/Khartoum
+          - Africa/Mbabane
+          - America/Port_of_Spain
+          - America/Indiana/Petersburg
+          - Asia/Ashgabat
+          - Asia/Qostanay
+          - US/Aleutian
+          - America/Aruba
+          - Pacific/Kwajalein
+          - America/Edmonton
+          - Europe/Athens
+          - Pacific/Bougainville
+          - Asia/Taipei
+          - Africa/Dakar
+          - America/Nuuk
+          - Australia/Sydney
+          - America/Thule
+          - America/Nome
+          - MET
+          - Etc/GMT-2
+          - Africa/Nouakchott
+          - America/St_Thomas
+          - Africa/Johannesburg
+          - America/Denver
+          - Pacific/Kanton
+          - Europe/Andorra
+          - Iceland
+          - Singapore
+          - Africa/Accra
+          - Asia/Almaty
+          - Indian/Kerguelen
+          - America/Kentucky/Louisville
+          - Europe/Uzhgorod
+          - America/Argentina/Salta
+          - Pacific/Efate
+          - America/Guatemala
+          - America/Bahia
+          - Europe/Lisbon
+          - Africa/Lome
+          - Australia/Canberra
+          - Asia/Hebron
+          - America/Vancouver
+          - Antarctica/Macquarie
+          - Asia/Khandyga
+          - Europe/Zagreb
+          - Cuba
+          - America/Lower_Princes
+          - Asia/Vientiane
+          - Africa/Cairo
+          - Europe/Madrid
+          - Atlantic/Canary
+          - America/Indiana/Vevay
+          - America/Araguaina
+          - America/Punta_Arenas
+          - Asia/Aden
+          - America/Lima
+          - America/Argentina/La_Rioja
+          - Etc/GMT+1
+          - America/Rio_Branco
+          - America/St_Kitts
+          - ROK
+          - Asia/Phnom_Penh
+          - Asia/Katmandu
+          - Africa/Maputo
+          - CST6CDT
+          - Pacific/Gambier
+          - America/Manaus
+          - Zulu
+          - MST
+          - Africa/Addis_Ababa
+          - Pacific/Midway
+          - Etc/GMT-5
+          - Asia/Jayapura
+          - America/Phoenix
+          - US/Central
+          - America/Fort_Wayne
+          - US/Indiana-Starke
+          - America/Argentina/Buenos_Aires
+          - America/Barbados
+          - Etc/GMT-1
+          - Europe/Gibraltar
+          - Asia/Riyadh
+          - Africa/Freetown
+          - Antarctica/DumontDUrville
+          - Asia/Rangoon
+          - Pacific/Pohnpei
+          - America/Argentina/ComodRivadavia
+          - America/Merida
+          - America/Sao_Paulo
+          - America/Cordoba
+          - America/Rainy_River
+          - Asia/Kuwait
+          - America/Shiprock
+          - Indian/Mauritius
+          - Atlantic/Faroe
+          - America/Dawson_Creek
+          - America/Swift_Current
+          - Africa/Lusaka
+          - Australia/Perth
+          - Africa/Abidjan
+          - Australia/Broken_Hill
+          - UTC
+          - America/Winnipeg
+          - Asia/Kuching
+          - Indian/Comoro
+          - Pacific/Tarawa
+          - America/Dominica
+          - America/Managua
+          - Africa/Monrovia
+          - America/Dawson
+          - Australia/North
+          - Africa/Timbuktu
+          - Asia/Ho_Chi_Minh
+          - America/El_Salvador
+          - America/Tegucigalpa
+          - Asia/Singapore
+          - Pacific/Kosrae
+          - America/Ensenada
+          - America/Yellowknife
+          - Asia/Muscat
+          - Pacific/Palau
+          - Canada/Eastern
+          - Canada/Mountain
+          - America/Boise
+          - Australia/LHI
+          - Europe/Rome
+          - Canada/Saskatchewan
+          - Greenwich
+          - Pacific/Norfolk
+          - America/Grenada
+          - Europe/Copenhagen
+          - Pacific/Marquesas
+          - America/Kralendijk
+          - Asia/Nicosia
+          - Asia/Chita
+          - America/North_Dakota/New_Salem
+          - Asia/Jerusalem
+          - America/Noronha
+          - GB-Eire
+          - US/Hawaii
+          - Asia/Pyongyang
+          - Antarctica/South_Pole
+          - America/Eirunepe
+          - America/Martinique
+          - America/Santa_Isabel
+          - America/Blanc-Sablon
+          - Antarctica/Syowa
+          - Antarctica/Davis
+          - Indian/Cocos
+          - US/Samoa
+          - Europe/Guernsey
+          - Africa/Malabo
+          - America/Rankin_Inlet
+          - US/Arizona
+          - Asia/Novokuznetsk
+          - Africa/Casablanca
+          - Asia/Hovd
+          - Asia/Irkutsk
+          - America/Argentina/Cordoba
+          - America/Monterrey
+          - W-SU
+          - Europe/Bucharest
+          - Pacific/Tahiti
+          - America/Belize
+          - Europe/Malta
+          - Etc/GMT
+          - Asia/Dubai
+          - Asia/Tashkent
+          - America/Metlakatla
+          - Australia/Yancowinna
+          - Asia/Omsk
+          - Hongkong
+          - America/Guadeloupe
+          - America/Juneau
+          - Asia/Ust-Nera
+          - Antarctica/Troll
+          - Europe/Minsk
+          - Africa/Ndjamena
+          - Europe/Volgograd
+          - Africa/Conakry
+          - Atlantic/Bermuda
+          - Etc/Greenwich
+          - Antarctica/Casey
+          - Asia/Calcutta
+          - Asia/Vladivostok
+          - America/Argentina/San_Luis
+          - Egypt
+          - WET
+          - Asia/Ashkhabad
+          - Australia/Darwin
+          - Atlantic/Cape_Verde
+          - America/La_Paz
+          - America/St_Lucia
+          - Asia/Chungking
+          - Africa/Kigali
+          - Africa/Nairobi
+          - America/Knox_IN
+          - Pacific/Johnston
+          - Israel
+          - Antarctica/Mawson
+          - Pacific/Honolulu
+          - PST8PDT
+          - America/Halifax
+          - Asia/Manila
+          - Pacific/Pago_Pago
+          - America/Caracas
+          - Asia/Seoul
+          - America/Hermosillo
+          - America/Miquelon
+          - Australia/Lord_Howe
+          - Antarctica/Palmer
+          - Australia/Lindeman
+          - Asia/Aqtobe
+          - Pacific/Easter
+          - Etc/UCT
+          - Asia/Kashgar
+          - America/Louisville
+          - Asia/Dili
+          - Etc/GMT-7
+          - Europe/Moscow
+          - Asia/Macao
+          - America/Rosario
+          - America/Cuiaba
+          - Asia/Bangkok
+          - Asia/Novosibirsk
+          - Pacific/Chuuk
+          - Asia/Dacca
+          - America/Mazatlan
+          - Pacific/Saipan
+          - America/Indiana/Knox
+          - Europe/Riga
+          - America/Goose_Bay
+          - America/Atka
+          - GB
+          - Africa/Kinshasa
+          - Poland
+          - America/Bahia_Banderas
+          - Asia/Karachi
+          - America/Marigot
+          - Etc/GMT+10
+          - America/Regina
+          - America/Guyana
+          - Australia/NSW
+          - Pacific/Funafuti
+          - Australia/South
+          - Europe/Belfast
+          - Africa/Tunis
+          - America/Santo_Domingo
+          - Brazil/Acre
+          - America/Cayenne
+          - Europe/Sarajevo
+          - Europe/Kyiv
+          - Pacific/Fakaofo
+          - Indian/Mahe
+          - Africa/Sao_Tome
+          - Australia/Queensland
+          - Indian/Antananarivo
+          - America/Argentina/Tucuman
+          - US/Eastern
+          - Asia/Colombo
+          - Pacific/Apia
+          - Australia/Melbourne
+          - Africa/El_Aaiun
+          - Asia/Hong_Kong
+          - America/Kentucky/Monticello
+          - Asia/Tomsk
+          - Africa/Douala
+          - America/Inuvik
+          - Atlantic/Azores
+          - Asia/Kabul
+          - Australia/Victoria
+          - America/Coral_Harbour
+          - Asia/Pontianak
+          - EST
+          - America/Glace_Bay
+          - America/Argentina/Ushuaia
+          - Europe/Nicosia
+          - Europe/Stockholm
+          - Portugal
+          - Etc/GMT+12
+          - America/Pangnirtung
+          - Africa/Lagos
+          - Pacific/Ponape
+          - Asia/Macau
+          - Pacific/Samoa
+          - America/Recife
+          - Eire
+          - Etc/GMT-6
+          - Africa/Bamako
+          - Europe/Tiraspol
+          - Australia/Adelaide
+          - Africa/Brazzaville
+          - Asia/Srednekolymsk
+          - Europe/Zaporozhye
+          - America/Argentina/Catamarca
+          - America/Detroit
+          - America/St_Barthelemy
+          - Europe/Paris
+          - Africa/Harare
+          - America/Paramaribo
+          - America/Moncton
+          - America/Port-au-Prince
+          - Etc/GMT+5
+          - UCT
+          - Europe/Ljubljana
+          - Asia/Shanghai
+          - America/Argentina/Rio_Gallegos
+          - America/Indianapolis
+          - Europe/Simferopol
+          - America/Resolute
+          - America/Iqaluit
+          - America/Antigua
+          - Africa/Windhoek
+          - Asia/Damascus
+          - Europe/Isle_of_Man
+          - Pacific/Port_Moresby
+          - Asia/Tehran
+          - Asia/Qatar
+          - Asia/Baghdad
+          - Jamaica
+          - Africa/Ouagadougou
+          - Australia/Brisbane
+          - Asia/Samarkand
+          - America/St_Johns
+          - Etc/GMT+0
+          - Indian/Maldives
+          - America/Fort_Nelson
+          - Europe/Vaduz
+          - America/Indiana/Marengo
+          - Asia/Dushanbe
+          - Etc/GMT-0
+          - GMT+0
+          - Asia/Yekaterinburg
+          - America/Montreal
+          - Asia/Thimbu
+          - Europe/Jersey
+          - Pacific/Auckland
+          - GMT0
+          - America/North_Dakota/Center
+          - EET
+          - Turkey
+          - Asia/Brunei
+          - Europe/Dublin
+          - America/Ojinaga
+          - America/Porto_Velho
+          - America/Godthab
+          - America/North_Dakota/Beulah
+          - Europe/Belgrade
+          type: string
+    MailingList:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        start_date:
+          type: string
+          format: date-time
+        end_date:
+          type: string
+          format: date-time
+        message:
+          type: string
+          maxLength: 255
+        tag:
+          type: string
+          maxLength: 20
+        code:
+          type: string
+          maxLength: 3
+      required:
+      - start_date
+      - end_date
+      - message
+    MessageList:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        cr_date_time:
+          type: string
+          format: date-time
+          readOnly: true
+        status:
+          enum:
+          - "\u041E\u0442\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u043E"
+          - "\u041D\u0435 \u043E\u0442\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u043E"
+          type: string
+        mailing:
+          type: integer
+        client:
+          type: integer
+      required:
+      - status
+      - mailing
+      - client
