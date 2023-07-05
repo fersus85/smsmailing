@@ -12,6 +12,8 @@ celery = "*"
 redis = "*"
 flower = "*"
 requests = "*"
+pyyaml = "*"
+uritemplate = "*"
 
 [dev-packages]
 

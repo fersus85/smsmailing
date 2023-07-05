@@ -20,7 +20,7 @@ from sms.views import ClientViewSet, MailingViewSet, MessageViewSet
 
 router = routers.SimpleRouter()
 router.register(r'clients', ClientViewSet, basename='clients')
-router.register(r'mailings', MailingViewSet, basename='mailing')
+router.register(r'mailings', MailingViewSet, basename='mailings')
 router.register(r'messages', MessageViewSet, basename='messages')
 
 urlpatterns = [
